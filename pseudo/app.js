@@ -70,10 +70,17 @@ function productosMedios() {
       //sacar numeros de en medio
       snumero3 = snumero2.substring(primerc, primerc + tam1);
       console.log(snumero3);
-      cont.innerHTML += `<p>${i}.-  Semilla: ${semillaInput} ||  Semilla2: ${semilla2} ||  Resultados: ${snumero3} ||   0.${snumero3}</p>`;
+      cont.innerHTML += `<p>${i}.- X0: <span class="titles">${semillaInput}</span>
+                         </br>X1: <span class="titles">${semilla2}</span>
+                         </br>Resultado: <span class="titles">0.${snumero3} </span>
+                         </br><span class="titles">----------------------</span></p>
+                          `;
+
       semillaInput = semilla2;
       semilla2 = parseInt(snumero3);
     }
+  } else {
+    generarAlert("Revise los datos ingresados");
   }
 }
 function multiConstante() {
@@ -91,7 +98,11 @@ function multiConstante() {
     tam2 = snumero2.length;
     primerc = (tam2 - tam1) / 2;
     snumero3 = snumero2.substring(primerc, primerc + tam1);
-    cont.innerHTML += `<p>${i}.- 0.${snumero3}</p>`;
+    cont.innerHTML += `<p>${i}.- X0: <span class="titles">${semillaInput}</span>
+    </br>Constante: <span class="titles">${cmultiplicativa}</span>
+    </br>Resultado: <span class="titles">0.${snumero3} </span>
+    </br><span class="titles">----------------------</span></p>
+     `;
     semillaInput = parseInt(snumero3);
   }
 }
@@ -109,7 +120,10 @@ function cuadradosMedios() {
     let primerc = (tam2 - tam1) / 2;
     snumero3 = snumero2.substring(primerc, primerc + tam1);
     num1 = parseInt(snumero3);
-    cont.innerHTML += `<p>${i}.- 0.${snumero3}</p>`;
+    cont.innerHTML += `<p>${i}.- X0: <span class="titles">${num2}^2</span>
+    </br>Resultado: <span class="titles">0.${snumero3} </span>
+    </br><span class="titles">----------------------</span></p>
+     `;
   }
 }
 
