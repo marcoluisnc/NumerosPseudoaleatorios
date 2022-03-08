@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  font-family: "Staatliches", cursive;
+}
+header {
+  padding: 30px;
+  text-align: center;
+}
+main {
+  background-color: rgba(212, 212, 212, 0.342);
+  margin: 20px;
+  padding: 15px;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.btn-dele,
+.borrar,
+select {
+  padding: 5px;
+  cursor: pointer;
+}
+.borrar {
+  background-color: red;
+  color: white;
+}
+label {
+  margin: 5px;
+}
+input {
+  padding: 5px;
+}
+.num-container {
+  background-color: rgba(240, 255, 255, 0.438);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+#appear,
+#appear2 {
+  display: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+}
+button {
+  margin: 10px 30px;
+  width: 82px;
+  height: 40px;
+}
+#semilla,
+#appear,
+#appear2 {
+  margin-bottom: 10px;
+}
+.divAlert {
+  border: 2px solid red;
+  background-color: rgb(255, 116, 116);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

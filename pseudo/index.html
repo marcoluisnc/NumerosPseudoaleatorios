@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de numeros pseudoaleatorios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Generador de numeros pseudoaleatorios</h1>
+    </header>
+    <main>
+      <form class="main-container">
+        <div class="cantidad">
+          <div id="semilla">
+            <label for="">Numero semilla: </label>
+            <input type="number" class="numero-semilla" />
+          </div>
+          <div id="appear">
+            <label for="">Constante</label>
+            <input type="number" class="numero-semilla" id="consIn" />
+          </div>
+          <div id="appear2">
+            <label for="">Semilla 2</label>
+            <input type="number" class="numero-semilla" id="semilla2" />
+          </div>
+        </div>
+        <div class="algoritmo">
+          <label for="#marca">Algoritmo: </label>
+          <select class="u-full-width" id="marca">
+            <option value="">Seleccione</option>
+            <option value="cuadrado">Algoritmo de cuadrados medios</option>
+            <option value="produ">Algoritmo de productos medios</option>
+            <option value="multi">Algoritmo multiplicador constante</option>
+          </select>
+        </div>
+        <div class="btn-container">
+          <button class="btn-dele">Mostrar</button>
+          <button class="borrar">Borrar</button>
+        </div>
+      </form>
+    </main>
+    <div class="num-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
